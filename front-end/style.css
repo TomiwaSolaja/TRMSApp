@@ -1,0 +1,65 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    background-image: url(nightsky.jpg);
+    background-repeat: repeat;
+    color: white;
+  }
+  .employee-box, .event-box{
+    border: 1px solid black;
+    padding: 2px;
+    color: black;
+    margin-left: 400px;
+    margin-right: 400px;
+    display:flex;
+    justify-content: center;
+  }
+  .employee-box, .login-box {
+    background-color: #28ec52;
+  }
+  .event-box {
+    background-color: #0fb117;
+  }
+  
+  h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: rgb(75, 75, 216);
+  }
+  input, .dropdown-selector, .field {
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    padding: 6px;
+  }
+  .number-field {
+    width: 4em;
+  }
+  input[type='text'], input[type='number'] {
+    padding-bottom: 7px;
+  }
+  input:focus {
+    outline: none;
+    border: none;
+    color: white;
+    border-bottom: 3px solid red;
+  }
+  .field {
+    width: 60%;
+  }
+  .submit-button {
+    border-radius: 5px;
+    border: none;
+    background-color: green;
+    color: #42f56c;
+  }
+  .completed-p p{
+      display: flex;
+      justify-content: center;
+  }
+  #cnfrm{
+    color: #e61919
+  }

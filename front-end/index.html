@@ -1,0 +1,95 @@
+<html><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>TRMS - Create New Request</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&amp;family=Oswald&amp;display=swap" rel="stylesheet">
+  </head>
+  
+  <body data-new-gr-c-s-check-loaded="14.1060.0" data-gr-ext-installed="">
+    <h1>TRMS Request Form</h1>
+    <script src="script.js"></script>
+  
+    <p>Click <a href="loginpage.html">here</a> if you need to access an existing request.</p>
+    <p>Other Pages </p>
+    <a href="supervis_page.html">supervisor approval</a><br>
+    <a href="dep_head_page.html">department head</a><br>
+    <a href="benco_page.html">Benefits Coordinator</a><br>
+    <a href="finpage.html">final grade/presentation upload</a><br>
+  
+    <div class="employee-box">
+      <form action>
+        <label><strong>Personal info:</strong></label><br>
+        <input type="text" id="fname" placeholder="First name" name="fname">
+        <input type="text" id="lname" placeholder="Last name" name="lname"><br>
+        <input type="email" class="field" id="email" placeholder="E-mail address" name="email"><br>
+        <input type="tel" class="field" id="phone" placeholder="Phone number" name="phone"><br>
+        <input type="text" class="field" id="employeeaddress" placeholder="Mailing address" name="employeeaddress"><br>
+        <input type="text" id="employeecity" placeholder="City" name="employeecity">
+        <select id="employeestate" class="dropdown-selector" name="employeestate">
+          <option disabled="" selected="" value="">Province</option>
+          <option value="AL">Alberta</option>
+            <option value="AK">British Columbia</option>
+            <option value="AZ">Manitoba</option>
+          <option value="AR">New Brunswick</option>
+          <option value="CA">Newfoundland and Labrador</option>
+          <option value="CO">Nova Scotia</option>
+            <option value="CT">Ontario</option>
+          <option value="DE">Prince Edward Island</option>
+            <option value="DC">Quebec</option>
+            <option value="FL">Saskatchewan</option>
+        </select>
+        <input type="text" id="employeezip" placeholder="Postal Code" maxlength="5" name="employeezip"><br>
+      
+      </form>
+    </div>
+  
+    <div class="event-box">
+      <form action="/action_page.php">
+        <label><strong>Event details:</strong></label><br>
+        <select id="eventtype" class="field" name="eventtype">
+          <option disabled="" selected="" value="">Event type</option>
+          <option value="CC">University course</option>
+            <option value="SM">Seminar</option>
+            <option value="CP">Certification prep class</option>
+          <option value="CR">Certification</option>
+          <option value="TT">Technical training</option>
+          <option value="OE">Other</option>
+        </select><br>
+        <input type="date" class="field" id="eventdate" placeholder="Start date" name="eventdate"><br>
+        <input type="text" class="field" id="eventaddress" placeholder="Event address" name="eventaddress"><br>
+        <input type="text" id="eventcity" placeholder="City" name="eventcity">
+        <select id="eventstate" class="dropdown-selector" name="eventstate">
+          <option disabled="" selected="" value="">Province</option>
+          <option value="AL">Alberta</option>
+          <option value="AK">British Columbia</option>
+          <option value="AZ">Manitoba</option>
+        <option value="AR">New Brunswick</option>
+        <option value="CA">Newfoundland and Labrador</option>
+        <option value="CO">Nova Scotia</option>
+          <option value="CT">Ontario</option>
+        <option value="DE">Prince Edward Island</option>
+          <option value="DC">Quebec</option>
+          <option value="FL">Saskatchewan</option>
+        </select>
+        <input type="text" id="eventzip" placeholder="Postal Code" maxlength="5" name="eventzip"><br>
+        <input class="field" placeholder="Description"><br>
+        <input class="field" placeholder="Cost"><br>
+        <input type="checkbox" id="defaultgrading" name="defaultgrading" value="Yes">
+        <label for="defaultgrading"> Use default grading scheme</label><br>
+      </form>
+  
+      
+    </div>
+  
+    <h2>Optional details</h2>
+    <label>Addtional Attachments:</label>
+    <input type="file"><br>
+  
+    <button onclick="create_request()"><a href="confirmed.html">SUBMIT</a></button>
+  
+  
+  </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
